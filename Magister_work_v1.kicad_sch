@@ -1,0 +1,152 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 43.18 73.66)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "08b35b78-346e-4aaf-94c2-29c106b914b4")
+		(property "Sheetname" "Sensors_1"
+			(at 43.18 72.9484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors_1.kicad_sch"
+			(at 43.18 104.7246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 34.29)
+		(size 49.53 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "28394b4c-191f-472e-9c99-37804f2a12fd")
+		(property "Sheetname" "STMF401_Sheet"
+			(at 43.18 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STMF401.kicad_sch"
+			(at 43.18 66.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 34.29)
+		(size 58.42 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda")
+		(property "Sheetname" "PWR_Sheet"
+			(at 104.14 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PWR.kicad_sch"
+			(at 104.14 66.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
