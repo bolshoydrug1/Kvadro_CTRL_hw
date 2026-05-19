@@ -3372,7 +3372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 175.26 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6123,7 +6123,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB"
+		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
 			(at 163.83 90.17 0)
 			(hide yes)
 			(show_name no)
