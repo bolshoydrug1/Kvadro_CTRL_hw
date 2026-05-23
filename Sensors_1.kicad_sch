@@ -3182,6 +3182,12 @@
 		(uuid "5a6ef3bf-d082-4107-9700-349673fb515f")
 	)
 	(junction
+		(at 101.6 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6902067a-95cd-4aeb-89f5-053a935b0c4d")
+	)
+	(junction
 		(at 57.15 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3258,12 +3264,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac05799e-21c5-4329-9174-01d90032b8ab")
-	)
-	(junction
-		(at 101.6 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5621ca4-cc15-4ab5-ada2-6e20de535479")
 	)
 	(junction
 		(at 81.28 52.07)
@@ -3837,7 +3837,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 123.19) (xy 121.92 123.19)
+			(xy 101.6 123.19) (xy 115.57 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4625,7 +4625,7 @@
 		)
 		(uuid "fffad619-3357-4d85-87cd-862580390870")
 	)
-	(global_label "MISO_LoRa"
+	(global_label "DIO1_LoRa"
 		(shape input)
 		(at 121.92 36.83 0)
 		(fields_autoplaced yes)
@@ -4637,7 +4637,7 @@
 		)
 		(uuid "13029c63-4e18-491a-88f9-5fd9d9c09de7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.0651 36.83 0)
+			(at 134.8837 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4795,7 +4795,7 @@
 	)
 	(global_label "BN_880_TX"
 		(shape input)
-		(at 121.92 123.19 0)
+		(at 115.57 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4805,7 +4805,7 @@
 		)
 		(uuid "6682b7bf-d53d-4286-9cd2-abdb6deecc58")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.2465 123.19 0)
+			(at 128.8965 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4841,7 +4841,7 @@
 			)
 		)
 	)
-	(global_label "MOSI_LoRa"
+	(global_label "DIO0_LoRa"
 		(shape input)
 		(at 121.92 34.29 0)
 		(fields_autoplaced yes)
@@ -4853,7 +4853,7 @@
 		)
 		(uuid "8dcafd15-d07b-4938-9e2e-5db3dc108a3c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.0651 34.29 0)
+			(at 134.8837 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4913,7 +4913,7 @@
 			)
 		)
 	)
-	(global_label "SCK_LoRa"
+	(global_label "DIO2_LoRa"
 		(shape input)
 		(at 121.92 39.37 0)
 		(fields_autoplaced yes)
@@ -4925,7 +4925,7 @@
 		)
 		(uuid "a268701d-c7a2-4ddd-9c44-bfd6d96462fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.2184 39.37 0)
+			(at 134.8837 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,7 +4985,7 @@
 			)
 		)
 	)
-	(global_label "SS_LoRa"
+	(global_label "Reset_LoRa"
 		(shape input)
 		(at 121.92 50.8 0)
 		(fields_autoplaced yes)
@@ -4997,7 +4997,7 @@
 		)
 		(uuid "cc058f20-5b96-4666-804d-c794827aa937")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.8879 50.8 0)
+			(at 135.6699 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
