@@ -1501,13 +1501,19 @@
 			(embedded_fonts no)
 		)
 		(symbol "FUSE:MF-MSMF110-2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "F1"
-				(at 0 2.54 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1517,7 +1523,7 @@
 				)
 			)
 			(property "Value" "MF-MSMF110-2"
-				(at 0.762 -3.048 0)
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1526,7 +1532,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 				(at -0.762 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1588,14 +1594,14 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 1.27)
-					(name ""
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1606,14 +1612,14 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 1.27)
-					(name ""
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2099,7 +2105,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TVS:SMBJ5.0CA"
+		(symbol "SMBJ5.0CA_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2154,7 +2160,7 @@
 					)
 				)
 			)
-			(property "Description" "Защитный диод двунаправленный 600Вт 5В"
+			(property "Description" "TVS 600Вт 5В двунаправленный"
 				(at -4.572 -10.414 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2187,7 +2193,7 @@
 					)
 				)
 			)
-			(symbol "SMBJ5.0CA_0_1"
+			(symbol "SMBJ5.0CA_1_0_1"
 				(polyline
 					(pts
 						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
@@ -2237,7 +2243,7 @@
 					)
 				)
 			)
-			(symbol "SMBJ5.0CA_1_1"
+			(symbol "SMBJ5.0CA_1_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2840,6 +2846,12 @@
 		(uuid "28f9f3ee-2052-4543-8445-93c74479d0cb")
 	)
 	(junction
+		(at 85.09 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38737072-67a9-4afd-92c9-70e334947351")
+	)
+	(junction
 		(at 140.97 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3012,12 +3024,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e22107cf-1bbe-441a-99b8-3304e58d0620")
-	)
-	(junction
-		(at 85.09 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed07cafc-4762-495d-abd3-898bc4cc7187")
 	)
 	(junction
 		(at 199.39 129.54)
@@ -3311,7 +3317,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 151.13) (xy 90.17 151.13)
+			(xy 78.74 151.13) (xy 90.17 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3501,16 +3507,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 151.13) (xy 85.09 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54f3ff17-ade5-41ad-a33f-647b4e4731b0")
-	)
-	(wire
-		(pts
 			(xy 201.93 81.28) (xy 201.93 86.36)
 		)
 		(stroke
@@ -3661,7 +3657,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 153.67) (xy 102.87 153.67)
+			(xy 78.74 153.67) (xy 85.09 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4141,13 +4137,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 151.13) (xy 85.09 158.75)
+			(xy 85.09 153.67) (xy 102.87 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1d4a4a7-56a5-49f8-bc4d-93163883ca8a")
+		(uuid "d16cac0f-1bc1-447b-8111-cb43dd62437f")
 	)
 	(wire
 		(pts
@@ -4498,6 +4494,16 @@
 			(type default)
 		)
 		(uuid "fc0c7882-3cae-4314-9a44-120ed7f5e09f")
+	)
+	(wire
+		(pts
+			(xy 85.09 153.67) (xy 85.09 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1509b1-da4f-47ce-a182-de4d9dfaaeb0")
 	)
 	(wire
 		(pts
@@ -5034,7 +5040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 218.44 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5287,7 +5293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 201.93 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5689,7 +5695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 45.72 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6580,7 +6586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 76.2 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7286,6 +7292,89 @@
 		)
 	)
 	(symbol
+		(lib_name "SMBJ5.0CA_1")
+		(lib_id "TVS:SMBJ5.0CA")
+		(at 158.75 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77ca0b50-126b-49aa-9a20-d19194d5cf79")
+		(property "Reference" "D6"
+			(at 161.29 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMBJ5.0CA"
+			(at 161.29 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
+			(at 163.83 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
+			(at 172.466 89.662 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TVS 600Вт 5В двунаправленный"
+			(at 169.164 92.202 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0feafbe-86b2-4326-8724-993ed892231e")
+		)
+		(pin "2"
+			(uuid "70f30781-156a-46f8-bf6a-06003b34a74b")
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 160.02 121.92 0)
 		(unit 1)
@@ -7401,7 +7490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 248.92 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7731,7 +7820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 96.52 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8050,7 +8139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 81.28 67.056 0)
 			(hide yes)
 			(show_name no)
@@ -8214,7 +8303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 60.96 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8374,7 +8463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 96.52 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8693,7 +8782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 86.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9011,7 +9100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9334,7 +9423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 34.29 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9550,88 +9639,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TVS:SMBJ5.0CA")
-		(at 158.75 87.63 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e62bd640-3731-4a6a-aa89-5a14c7f770a7")
-		(property "Reference" "D1"
-			(at 161.29 86.3599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMBJ5.0CA"
-			(at 161.29 88.8999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-			(at 163.83 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
-			(at 172.466 89.662 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Защитный диод двунаправленный 600Вт 5В"
-			(at 169.164 92.202 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d180e62e-9894-458b-837a-4dcbc620f827")
-		)
-		(pin "1"
-			(uuid "a44a26fb-4f7f-4529-a2e3-782eb227d801")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 149.86 38.1 270)
 		(unit 1)
@@ -9794,86 +9801,6 @@
 		)
 	)
 	(symbol
-		(lib_id "FUSE:MF-MSMF110-2")
-		(at 146.05 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2c6c970-7d48-4f9f-9e4f-58ec23757de7")
-		(property "Reference" "F1"
-			(at 146.05 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MF-MSMF110-2"
-			(at 146.05 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
-			(at 145.288 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MF-MSMF110-2, 1.1А, 1812, Предохранитель самовосстанавливающийся, MultiFuse SMD"
-			(at 144.526 86.868 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "785a6a6c-e874-4047-b62a-ae59cf033bc5")
-		)
-		(pin ""
-			(uuid "12df0a5e-5f20-4d12-b023-cc78de9620b3")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 96.52 74.93 0)
 		(unit 1)
@@ -9946,6 +9873,86 @@
 			(project "Magister_work_v1"
 				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FUSE:MF-MSMF110-2")
+		(at 146.05 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6446a5d-d0a4-46fb-9740-6df0def30cd2")
+		(property "Reference" "F1"
+			(at 146.05 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF110-2"
+			(at 146.05 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 145.288 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MF-MSMF110-2, 1.1А, 1812, Предохранитель самовосстанавливающийся, MultiFuse SMD"
+			(at 144.526 86.868 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "92da2669-cf27-44cd-840b-476f9a827f94")
+		)
+		(pin "1"
+			(uuid "3b71649b-5e33-4b36-9ef5-2338cdc47a8d")
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/6e6c00e0-c4a8-403b-83b3-c44ac9f0fdda"
+					(reference "F1")
 					(unit 1)
 				)
 			)

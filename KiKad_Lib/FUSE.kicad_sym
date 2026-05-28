@@ -3,13 +3,19 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "MF-MSMF110-2"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "F1"
-			(at 0 2.54 0)
+			(at 0 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19,7 +25,7 @@
 			)
 		)
 		(property "Value" "MF-MSMF110-2"
-			(at 0.762 -3.048 0)
+			(at 0 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28,7 +34,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 			(at -0.762 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -90,14 +96,14 @@
 			(pin passive line
 				(at -5.08 0 0)
 				(length 1.27)
-				(name ""
+				(name "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -108,14 +114,14 @@
 			(pin passive line
 				(at 5.08 0 180)
 				(length 1.27)
-				(name ""
+				(name "A2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
