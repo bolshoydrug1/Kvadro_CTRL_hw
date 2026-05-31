@@ -514,16 +514,16 @@
         "clearance": 0.5,
         "diff_pair_gap": 0.2,
         "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.6,
+        "microvia_drill": 0.2,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "via_diameter": 1.2,
+        "via_drill": 0.6
       }
     ],
     "meta": {
@@ -570,7 +570,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "Magister_work_v1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -632,12 +632,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -682,7 +694,7 @@
         "uuid": "9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
       }
     ],
-    "used_designators": "#PWR73,F1-2,D6-9,C31-32,L1-2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
