@@ -6495,7 +6495,7 @@
         "uuid": "9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
       }
     ],
-    "used_designators": "C26,C33",
+    "used_designators": "U1,U5,J1-5,J10-14,R12-19,#PWR1-14,#PWR18,#PWR22-24,#PWR68-72,#PWR74-84,L3-4,VD5-13,D1-3,D6,C7-8,C26,C33-42",
     "variants": []
   },
   "sheets": [
@@ -6514,6 +6514,10 @@
     [
       "08b35b78-346e-4aaf-94c2-29c106b914b4",
       "Sensors_1"
+    ],
+    [
+      "3660b783-eee0-4e1b-8342-5de2b174bf8a",
+      "PWM_out"
     ]
   ],
   "text_variables": {},
