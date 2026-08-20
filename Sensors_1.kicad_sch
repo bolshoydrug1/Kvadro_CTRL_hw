@@ -1090,7 +1090,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Inductors:L"
+		(symbol "Diode:SMAJ5.0CA"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1103,8 +1103,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L1"
-				(at -0.254 2.286 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1113,8 +1113,8 @@
 					)
 				)
 			)
-			(property "Value" "BLM21PG121SN1D"
-				(at 1.27 -1.778 0)
+			(property "Value" "SMAJ5.0CA"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1123,19 +1123,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-				(at -0.762 -3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.chipdip.ru/product/blm21pg121sn1d-120-om-3a-0805-drossel-podavleniya-murata-9000180593?ysclid=mpka56hp4h115790304"
-				(at -0.508 -10.414 0)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1145,18 +1134,7 @@
 					)
 				)
 			)
-			(property "Description" "Дроссель подавления ЭМП 120 Ом, 3А, 0805,"
-				(at 12.192 -5.842 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1167,7 +1145,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(property "Description" "400W bidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1178,11 +1156,57 @@
 					)
 				)
 			)
-			(symbol "L_0_1"
-				(arc
-					(start -2.54 0)
-					(mid -1.905 0.6323)
-					(end -1.27 0)
+			(property "ki_keywords" "bidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMAJ5.0CA_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -1191,36 +1215,12 @@
 						(type none)
 					)
 				)
-				(arc
-					(start -1.27 0)
-					(mid -0.635 0.6323)
-					(end 0 0)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.635 0.6323)
-					(end 1.27 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.27 0)
-					(mid 1.905 0.6323)
-					(end 2.54 0)
-					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -1228,11 +1228,11 @@
 					)
 				)
 			)
-			(symbol "L_1_1"
+			(symbol "SMAJ5.0CA_1_1"
 				(pin passive line
 					(at -3.81 0 0)
-					(length 1.27)
-					(name "1"
+					(length 2.54)
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1249,8 +1249,8 @@
 				)
 				(pin passive line
 					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
+					(length 2.54)
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1710,364 +1710,6 @@
 						)
 					)
 					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SMBJ5.0CA_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D1"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SMBJ5.0CA"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMB"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
-				(at -2.032 -13.716 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "TVS 600Вт 5В двунаправленный"
-				(at -4.572 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode TVS voltage suppressor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D?DO?201AE*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SMBJ5.0CA_1_0_1"
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMBJ5.0CA_1_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SMBJ5.0CA_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D8"
-				(at 1.2701 -2.54 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "SMBJ5.0CA"
-				(at -1.2699 -2.54 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
-				(at -2.032 -13.716 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "TVS 600Вт 5В двунаправленный"
-				(at -4.572 -10.414 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode TVS voltage suppressor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D?DO?201AE*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SMBJ5.0CA_2_0_1"
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMBJ5.0CA_2_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3486,22 +3128,22 @@
 		(uuid "0c9d1fd4-5df0-4b4d-bf14-bb05ab69276c")
 	)
 	(junction
-		(at 53.34 90.17)
+		(at 40.64 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0cce623a-1972-4ec8-ab19-35c0bea599b6")
-	)
-	(junction
-		(at 58.42 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e5f4602-ff0b-45ac-8189-d60d3d1eb294")
 	)
 	(junction
 		(at 137.16 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26f65ce5-5196-42ee-990c-6e5a124e71de")
+	)
+	(junction
+		(at 58.42 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28c73b12-6ba2-4d10-84a6-08fcde119242")
 	)
 	(junction
 		(at 58.42 44.45)
@@ -3540,12 +3182,6 @@
 		(uuid "5621ae7d-cdcd-40a4-b2e4-e2ce4814f182")
 	)
 	(junction
-		(at 36.83 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e1df8d2-c0a6-4fde-b418-92ef592dbc50")
-	)
-	(junction
 		(at 81.28 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3564,7 +3200,7 @@
 		(uuid "69b057b2-78a4-46a7-b1d3-cdccf7e79888")
 	)
 	(junction
-		(at 91.44 69.85)
+		(at 78.74 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "753ddae0-16cf-41a3-9a48-18b495505b18")
@@ -3588,7 +3224,7 @@
 		(uuid "8b4816e6-3976-4637-bdca-942abb5972e7")
 	)
 	(junction
-		(at 93.98 85.09)
+		(at 81.28 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d0e4de4-6236-4e77-a708-30dff9fd28fd")
@@ -3600,7 +3236,7 @@
 		(uuid "9315cc93-23f7-4d04-bc75-a231127a97bf")
 	)
 	(junction
-		(at 58.42 87.63)
+		(at 45.72 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96067427-603a-4745-a557-54df7bc5d608")
@@ -3624,12 +3260,6 @@
 		(uuid "a09e4e95-292f-45d1-b747-805af74025dd")
 	)
 	(junction
-		(at 36.83 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5c54c8c-4700-457e-91b8-bc9ec9296419")
-	)
-	(junction
 		(at 240.03 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3642,7 +3272,7 @@
 		(uuid "ac05799e-21c5-4329-9174-01d90032b8ab")
 	)
 	(junction
-		(at 82.55 85.09)
+		(at 69.85 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7b6103c-01b3-4cda-a5b0-8d2b4d6a6808")
@@ -3672,7 +3302,7 @@
 		(uuid "d86bdff6-640e-415e-a666-cd6ddab483a3")
 	)
 	(junction
-		(at 82.55 69.85)
+		(at 69.85 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8aa7da7-93c3-4f32-928a-779257381a13")
@@ -3789,17 +3419,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 44.45) (xy 58.42 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "098601de-dc8e-4ef9-beba-af33b064c0b3")
-	)
-	(wire
-		(pts
-			(xy 44.45 85.09) (xy 82.55 85.09)
+			(xy 31.75 99.06) (xy 69.85 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3909,7 +3529,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 82.55) (xy 71.12 69.85)
+			(xy 58.42 96.52) (xy 58.42 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3979,7 +3599,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 69.85) (xy 91.44 69.85)
+			(xy 69.85 83.82) (xy 78.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4029,7 +3649,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 81.28) (xy 82.55 85.09)
+			(xy 69.85 95.25) (xy 69.85 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4039,7 +3659,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 59.69) (xy 36.83 59.69)
+			(xy 54.61 59.69) (xy 58.42 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4069,7 +3689,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 90.17) (xy 53.34 90.17)
+			(xy 31.75 104.14) (xy 40.64 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4089,7 +3709,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 85.09) (xy 93.98 85.09)
+			(xy 90.17 99.06) (xy 81.28 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4179,7 +3799,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 87.63) (xy 58.42 93.98)
+			(xy 45.72 101.6) (xy 45.72 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4199,23 +3819,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 69.85) (xy 82.55 69.85)
+			(xy 58.42 83.82) (xy 69.85 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6b33a1f5-6e00-4810-b7fc-940e59e4f090")
-	)
-	(wire
-		(pts
-			(xy 36.83 44.45) (xy 36.83 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c23c24a-22f3-4625-bf9c-a15f53ff5241")
 	)
 	(wire
 		(pts
@@ -4259,17 +3869,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 54.61) (xy 36.83 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75894367-c951-4316-8918-186d37f49e6f")
-	)
-	(wire
-		(pts
-			(xy 31.75 43.18) (xy 31.75 44.45)
+			(xy 46.99 43.18) (xy 46.99 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4319,7 +3919,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 90.17) (xy 72.39 90.17)
+			(xy 40.64 104.14) (xy 59.69 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4379,7 +3979,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 87.63) (xy 72.39 87.63)
+			(xy 45.72 101.6) (xy 59.69 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4449,7 +4049,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 82.55) (xy 71.12 82.55)
+			(xy 31.75 96.52) (xy 58.42 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4489,7 +4089,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 69.85) (xy 91.44 69.85)
+			(xy 90.17 83.82) (xy 78.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4509,7 +4109,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 80.01) (xy 102.87 85.09)
+			(xy 90.17 93.98) (xy 90.17 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4519,7 +4119,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 93.98) (xy 53.34 90.17)
+			(xy 40.64 107.95) (xy 40.64 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4529,7 +4129,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 85.09) (xy 93.98 85.09)
+			(xy 69.85 99.06) (xy 81.28 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4739,7 +4339,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 74.93) (xy 102.87 69.85)
+			(xy 90.17 88.9) (xy 90.17 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4889,7 +4489,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 73.66) (xy 82.55 69.85)
+			(xy 69.85 87.63) (xy 69.85 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4899,17 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 44.45) (xy 44.45 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea4628e8-5c60-4c48-8f4d-b794a2a52294")
-	)
-	(wire
-		(pts
-			(xy 55.88 104.14) (xy 55.88 107.95)
+			(xy 43.18 118.11) (xy 43.18 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4919,7 +4509,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 87.63) (xy 58.42 87.63)
+			(xy 31.75 101.6) (xy 45.72 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4979,7 +4569,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 44.45) (xy 36.83 44.45)
+			(xy 46.99 44.45) (xy 58.42 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5066,16 +4656,6 @@
 			(type default)
 		)
 		(uuid "ff2b7f01-116d-4d73-bc50-4428157a3cd1")
-	)
-	(wire
-		(pts
-			(xy 36.83 59.69) (xy 58.42 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff92d28a-6a4a-4a04-908b-b79e4819beae")
 	)
 	(wire
 		(pts
@@ -5281,7 +4861,7 @@
 	)
 	(global_label "HC_trigger"
 		(shape input)
-		(at 72.39 87.63 0)
+		(at 59.69 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5291,7 +4871,7 @@
 		)
 		(uuid "77f25af9-bdb1-4d9c-8e4a-d9f6432438b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.2328 87.63 0)
+			(at 72.5328 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5329,7 +4909,7 @@
 	)
 	(global_label "HC_echo"
 		(shape input)
-		(at 72.39 90.17 0)
+		(at 59.69 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5339,7 +4919,7 @@
 		)
 		(uuid "93a8dce9-61e3-4dfc-8bbb-d92ae8ac9270")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.4185 90.17 0)
+			(at 70.7185 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5592,6 +5172,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SMAJ5.0CA")
+		(at 69.85 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "028c9a67-0cbf-4041-94fc-bca1b70fb826")
+		(property "Reference" "D5"
+			(at 72.39 90.1699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMAJ5.0CA"
+			(at 72.39 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 74.93 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 69.85 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400W bidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
+			(at 69.85 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "170bca2b-b989-4c3f-a822-e32f92a6ebe0")
+		)
+		(pin "1"
+			(uuid "b760e336-a373-49a3-bc21-6b701f21bcdb")
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 240.03 72.39 0)
 		(unit 1)
@@ -5833,7 +5495,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 39.37 85.09 0)
+		(at 26.67 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5844,7 +5506,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ce70d3b-4888-4c50-8cbf-29e4aaa6b11e")
 		(property "Reference" "J7"
-			(at 40.005 77.47 0)
+			(at 27.305 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5854,7 +5516,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 40.005 80.01 0)
+			(at 27.305 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5864,7 +5526,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
-			(at 39.37 85.09 0)
+			(at 26.67 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5875,7 +5537,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 85.09 0)
+			(at 26.67 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5886,7 +5548,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 39.37 85.09 0)
+			(at 26.67 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5912,86 +5574,6 @@
 			(project "Magister_work_v1"
 				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Inductors:L")
-		(at 48.26 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "235226e7-a3af-4574-8904-032fc98e2957")
-		(property "Reference" "L2"
-			(at 48.26 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BLM21PG121SN1D"
-			(at 48.26 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 47.498 48.006 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.chipdip.ru/product/blm21pg121sn1d-120-om-3a-0805-drossel-podavleniya-murata-9000180593?ysclid=mpka56hp4h115790304"
-			(at 47.752 54.864 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Дроссель подавления ЭМП 120 Ом, 3А, 0805,"
-			(at 60.452 50.292 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "79d6ffa5-cbe6-4c10-a495-6b9a7261c25e")
-		)
-		(pin "1"
-			(uuid "3cd6dcd5-ad95-4be7-abb0-685f226c72d6")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -6404,7 +5986,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 91.44 69.85 0)
+		(at 78.74 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6415,7 +5997,7 @@
 		(fields_autoplaced yes)
 		(uuid "3166674b-c144-414e-a7c1-a97eb90405bc")
 		(property "Reference" "#PWR055"
-			(at 91.44 73.66 0)
+			(at 78.74 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,7 +6008,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 91.44 64.77 0)
+			(at 78.74 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6436,7 +6018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 69.85 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6447,7 +6029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 69.85 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6458,7 +6040,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 91.44 69.85 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6482,7 +6064,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 102.87 77.47 0)
+		(at 90.17 91.44 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6494,7 +6076,7 @@
 		(fields_autoplaced yes)
 		(uuid "3976c0aa-225d-4f2d-9695-d6dfb6f0687e")
 		(property "Reference" "C27"
-			(at 100.33 76.2062 0)
+			(at 87.63 90.1762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6505,7 +6087,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 100.33 78.7462 0)
+			(at 87.63 92.7162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6516,7 +6098,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 102.87 77.47 0)
+			(at 90.17 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6527,7 +6109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 77.47 0)
+			(at 90.17 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6538,7 +6120,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 102.87 77.47 0)
+			(at 90.17 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6565,7 +6147,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 59.69 0)
+		(at 54.61 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6573,10 +6155,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39b1aeeb-6168-44e6-8405-0e3ad2d4680a")
 		(property "Reference" "#PWR052"
-			(at 31.75 66.04 0)
+			(at 54.61 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6587,7 +6168,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 64.77 0)
+			(at 54.61 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6597,7 +6178,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 59.69 0)
+			(at 54.61 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6608,7 +6189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 59.69 0)
+			(at 54.61 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6619,7 +6200,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 59.69 0)
+			(at 54.61 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6722,7 +6303,7 @@
 	)
 	(symbol
 		(lib_id "TWS:GSOT03C-E3-08")
-		(at 55.88 99.06 90)
+		(at 43.18 113.03 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6733,7 +6314,7 @@
 		(fields_autoplaced yes)
 		(uuid "41dfbbe5-c2e0-4cbe-adfb-05b08b5f7478")
 		(property "Reference" "VD1"
-			(at 60.96 97.7264 90)
+			(at 48.26 111.6964 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6744,7 +6325,7 @@
 			)
 		)
 		(property "Value" "GSOT03C-E3-08"
-			(at 60.96 100.2664 90)
+			(at 48.26 114.2364 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6755,7 +6336,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 63.5 99.06 0)
+			(at 50.8 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6766,7 +6347,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.chipdip.ru/product/gsot03c-e3-08-ustroystvo-zaschity-ot-esd-zaschitnyy-umw-9001633932?utm_source=direct&utm_medium=cpc&utm_campaign=Y_dinamicheskaya_max_conv&utm_content=text1_ya&utm_term=---autotargeting&position_type=dynamic_places&etext=&yclid=11292835086090895359&ybaip=1"
-			(at 68.834 83.312 0)
+			(at 56.134 97.282 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6777,7 +6358,7 @@
 			)
 		)
 		(property "Description" "Устройство защиты от ESD, защитный диод"
-			(at 72.898 93.218 0)
+			(at 60.198 107.188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7139,90 +6720,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 36.83 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "490a476d-3230-4e72-967f-cc52d3378bf9")
-		(property "Reference" "C31"
-			(at 39.37 50.8062 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 39.37 53.3462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 36.83 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 36.83 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f125af0b-1e09-4676-97d9-5b9bfd3d16e2")
-		)
-		(pin "1"
-			(uuid "a1b15fd5-2c99-4580-a0a8-3ad78097bb84")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 55.88 107.95 0)
+		(at 43.18 121.92 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7234,7 +6733,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c66579c-8abb-43aa-8247-b458879bbacd")
 		(property "Reference" "#PWR056"
-			(at 55.88 114.3 0)
+			(at 43.18 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7245,7 +6744,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 113.03 0)
+			(at 43.18 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7255,7 +6754,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 107.95 0)
+			(at 43.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7266,7 +6765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 107.95 0)
+			(at 43.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7277,7 +6776,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 107.95 0)
+			(at 43.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7616,91 +7115,8 @@
 		)
 	)
 	(symbol
-		(lib_name "SMBJ5.0CA_2")
-		(lib_id "TVS:SMBJ5.0CA")
-		(at 137.16 128.27 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6189901d-7b15-467b-8b46-f5278ec7a29d")
-		(property "Reference" "D8"
-			(at 139.7 126.9999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMBJ5.0CA"
-			(at 139.7 129.5399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-			(at 142.24 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
-			(at 150.876 130.302 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TVS 600Вт 5В двунаправленный"
-			(at 147.574 132.842 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "096a1178-faf5-4ec5-a7e6-1b15cd2ca680")
-		)
-		(pin "2"
-			(uuid "14327e60-65ff-4959-ac98-a60f470753ca")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 93.98 85.09 0)
+		(at 81.28 99.06 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7712,7 +7128,7 @@
 		(fields_autoplaced yes)
 		(uuid "6230aa72-d5ac-4980-940b-6aa962848243")
 		(property "Reference" "#PWR054"
-			(at 93.98 91.44 0)
+			(at 81.28 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7723,7 +7139,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 90.17 0)
+			(at 81.28 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7733,7 +7149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 85.09 0)
+			(at 81.28 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7744,7 +7160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 85.09 0)
+			(at 81.28 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7755,7 +7171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 85.09 0)
+			(at 81.28 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9154,6 +8570,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SMAJ5.0CA")
+		(at 137.16 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd944062-b955-431c-88e4-06656d06b40b")
+		(property "Reference" "D4"
+			(at 139.7 126.9999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMAJ5.0CA"
+			(at 139.7 129.5399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 142.24 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 137.16 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400W bidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
+			(at 137.16 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1b6a5718-8c1b-4189-9444-72aaaedc43ff")
+		)
+		(pin "1"
+			(uuid "5844c0a2-9e1f-40f8-b902-75300c76d16a")
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 68.58 147.32 0)
 		(unit 1)
@@ -9315,7 +8813,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 31.75 43.18 0)
+		(at 46.99 43.18 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9327,7 +8825,7 @@
 		(fields_autoplaced yes)
 		(uuid "f07f6c65-c138-40d3-a48d-9d294289e951")
 		(property "Reference" "#PWR053"
-			(at 31.75 46.99 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9338,7 +8836,7 @@
 			)
 		)
 		(property "Value" "+3V3D"
-			(at 31.75 38.1 0)
+			(at 46.99 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9348,7 +8846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 43.18 0)
+			(at 46.99 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9359,7 +8857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 43.18 0)
+			(at 46.99 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9370,7 +8868,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 31.75 43.18 0)
+			(at 46.99 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9509,89 +9007,6 @@
 			(project "Magister_work_v1"
 				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "SMBJ5.0CA_1")
-		(lib_id "TVS:SMBJ5.0CA")
-		(at 82.55 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f84bd16c-b8ea-4399-bd9c-ccb3e59f07f8")
-		(property "Reference" "D7"
-			(at 85.09 76.1999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMBJ5.0CA"
-			(at 85.09 78.7399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
-			(at 87.63 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://static.chipdip.ru/lib/863/DOC025863762.pdf"
-			(at 96.266 79.502 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TVS 600Вт 5В двунаправленный"
-			(at 92.964 82.042 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ebbfd063-a8c3-4b89-80f4-b6d310a78516")
-		)
-		(pin "2"
-			(uuid "68a4bb29-a549-4f14-bcbe-90b1723ef815")
-		)
-		(instances
-			(project "Magister_work_v1"
-				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb/08b35b78-346e-4aaf-94c2-29c106b914b4"
-					(reference "D7")
 					(unit 1)
 				)
 			)
