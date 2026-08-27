@@ -52,6 +52,52 @@
 		)
 	)
 	(sheet
+		(at 87.63 120.65)
+		(size 48.26 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "15a36b06-8454-4363-8de9-e6e1cabaaceb")
+		(property "Sheetname" "External_interfaces"
+			(at 87.63 119.9384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External_interfaces.kicad_sch"
+			(at 87.63 144.0946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Magister_work_v1"
+				(path "/9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 43.18 34.29)
 		(size 49.53 31.75)
 		(exclude_from_sim no)

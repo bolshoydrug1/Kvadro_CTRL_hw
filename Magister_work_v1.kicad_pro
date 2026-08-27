@@ -6495,7 +6495,7 @@
         "uuid": "9ff4e5e8-ab59-4c4d-a10a-f8f5e444c5cb"
       }
     ],
-    "used_designators": "R20,#PWR85-89,VD14,C9-11,C43-44,D3-5,L4-5,U1,U6",
+    "used_designators": "U9,Q1-2,R7-8,R23-30,J7-10,J15,C28,C45-48,VD2-3,VD10,D4-6,#PWR18,#PWR54-55,#PWR57-61,#PWR76-77,#PWR94-104",
     "variants": []
   },
   "sheets": [
@@ -6518,6 +6518,10 @@
     [
       "3660b783-eee0-4e1b-8342-5de2b174bf8a",
       "PWM_out"
+    ],
+    [
+      "15a36b06-8454-4363-8de9-e6e1cabaaceb",
+      "External_interfaces"
     ]
   ],
   "text_variables": {},
