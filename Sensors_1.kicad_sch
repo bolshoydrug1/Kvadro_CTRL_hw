@@ -3115,12 +3115,20 @@
 		(uuid "18009fbe-354b-4445-8fcc-15f52b37e4cc")
 	)
 	(no_connect
+		(at 87.63 39.37)
+		(uuid "2209d122-91c3-43a9-ae84-49799c0f4425")
+	)
+	(no_connect
 		(at 182.88 118.11)
 		(uuid "34b2340f-217c-4ef4-99d5-68b6fe00e530")
 	)
 	(no_connect
 		(at 86.36 116.84)
 		(uuid "3874f598-b31c-4020-ad96-c420d065bf18")
+	)
+	(no_connect
+		(at 86.36 82.55)
+		(uuid "3e498322-1d54-4eb7-9876-36ffe2cc9f24")
 	)
 	(no_connect
 		(at 182.88 120.65)
@@ -3307,16 +3315,6 @@
 			(type default)
 		)
 		(uuid "120f2dbb-9a3b-4cd0-880b-94d5b0d9f07a")
-	)
-	(wire
-		(pts
-			(xy 87.63 39.37) (xy 104.14 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15112521-c106-483e-af1c-dd9981d547d5")
 	)
 	(wire
 		(pts
@@ -4157,16 +4155,6 @@
 			(type default)
 		)
 		(uuid "9f10248f-0d3f-485b-a3bd-a47cdb7a9d95")
-	)
-	(wire
-		(pts
-			(xy 86.36 82.55) (xy 102.87 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fb588d3-e689-4bf5-9ea9-2b059232052e")
 	)
 	(wire
 		(pts
@@ -5188,30 +5176,6 @@
 			)
 		)
 	)
-	(global_label "DIO2_RaSH"
-		(shape input)
-		(at 102.87 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "827ce746-ca0c-4cb4-ba29-a9bb2856233b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.1966 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "LSM_SCLK"
 		(shape input)
 		(at 190.5 74.93 180)
@@ -5329,30 +5293,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "DIO2_LoRa"
-		(shape input)
-		(at 104.14 39.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a268701d-c7a2-4ddd-9c44-bfd6d96462fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.1037 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
