@@ -5998,7 +5998,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 176.53 76.2 0)
 			(hide yes)
 			(show_name no)
