@@ -7047,7 +7047,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 236.22 105.156 0)
 			(hide yes)
 			(show_name no)
