@@ -4409,10 +4409,6 @@
 		(uuid "6bb4af46-437b-4218-a39c-496e02e44707")
 	)
 	(no_connect
-		(at 143.51 121.92)
-		(uuid "7430b513-f70e-44ae-b2d9-6dcff484416b")
-	)
-	(no_connect
 		(at 99.06 100.33)
 		(uuid "746ffb2d-4e21-4ed9-84d9-d72f1c0dd7ef")
 	)
@@ -4975,6 +4971,16 @@
 			(type default)
 		)
 		(uuid "48ef4f4b-d28c-44a8-b6af-64fd2b60f1a1")
+	)
+	(wire
+		(pts
+			(xy 143.51 121.92) (xy 152.4 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a0566bd-4d33-4da4-8f1c-217fa5adbeb3")
 	)
 	(wire
 		(pts
@@ -6587,6 +6593,30 @@
 		(uuid "2111d13a-da35-4981-903d-a6ddfc07baa0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 185.0184 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "BAT_CTRL"
+		(shape input)
+		(at 152.4 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27b7d8f8-29dc-4f7b-93d8-a2c840cabaeb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.2147 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
